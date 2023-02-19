@@ -33,6 +33,7 @@ height: 80px;
   position: absolute;
   top: 35%;
   left: 20%;
+  box-sizing: content-box;
 }
 .Guardar01{
   background-color: rgb(125, 40, 129);
@@ -87,3 +88,54 @@ border-radius: 10px;
   background: linear-gradient(to right, #CB3066, #16BFFD); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   
 }
+
+
+
+#link-alumno{
+  
+  background-color: #5a113c;
+  color: white;
+  border-color: black;
+}
+
+/* Pagina principal */
+
+body {
+  background-color: #f5f5f5;
+}
+
+.contenedor {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+button {
+  background-color: #337ab7;
+  color: #fff;
+  border: none;
+  padding: 15px 25px;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease-in-out;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+@media screen and (max-width: 768px) {
+  button {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+}
+
+
