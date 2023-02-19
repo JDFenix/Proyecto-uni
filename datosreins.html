@@ -27,56 +27,23 @@
         <script src="main.js"></script>
 
 
+
+
         <title>Plantilla</title>
-    </head>
-    <body >
-        
-
-
 
 
         <h1 id="Titcent">UNIVERSIDAD DEL VALLE </h1>
 
-        <h1 id="registrarAlumnos">Inscribir Alumnos</h1>
-        <div id="inscribir">
+    </head>
+    <body id="Pag-principal">
 
-
-            <div>
-                <label for="Nombre-alumno">Nombre:</label>
-                <input type="text" id="Nombre-alumno"><br><br>
-            </div>
-            
-             <div>
-                    <label for="apellido">Apellido:</label>
-                    <input type="text" id="apellido" ><br><br>
-                </div>
-                <div>
-                    <label for="matricula">Matricula:</label>
-                    <input type="number" id="matricula"><br><br>
-                </div>
-                <div>
-                    <label for="nss">nss:</label>
-                    <input type="number" id="nss" ><br><br>
-                </div>
-                <div>
-                    <label for="edad">Fecha de nacimiento:</label>
-                    <input type="date" id="edad" ><br><br>
-                </div>
-
-            <button  onclick="guardarDatosInscripcion()">Guardar datos</button>
-            <button id="Cambiar-btn-ins"
-                onclick="location.href='index2.html'" disabled>Ir a otra
-                página</button> 
-        </div>
-        
-
-        <h1 id="tituloreinscirbir">Reinscribir Alumnos</h1>
-        <div id="ReincribirAlumnos01">
+        <h1 class="col-6" id="tituloreinscirbir">Reinscribir Alumnos</h1>
+        <div class="col-6" id="ReincribirAlumnos01">
 
             <form>
                 <div>
                     <label for="number">matricula:</label>
-                    <input type="number" id="matricula" ><br><br>
+                    <input type="number" id="matricula"><br><br>
                 </div>
                 <div>
                     <label for="contraseña">contraseña:</label>
@@ -84,17 +51,17 @@
                 </div>
                 <div>
                     <label for="grupo">Grupo:</label>
-                    <input type="number" id="grupo" ><br><br>
+                    <input type="number" id="grupo"><br><br>
                 </div>
             </form>
 
-             <button id="btn-guardar-reins" onclick="guardarDatosreinsc()">Guardar
+            <button id="btn-guardar-reins" onclick="guardarDatosreinsc()">Guardar
                 datos</button>
             <button id="Cambiar-btn"
                 onclick="location.href='.html'" disabled>Ir a otra
                 página</button>
- 
+
         </div>
-      
+
     </body>
 </html>

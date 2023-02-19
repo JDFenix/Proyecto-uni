@@ -1,10 +1,12 @@
-body{
+#cuerpo-sec{
   margin: 0;
   padding: 0;
   font-family:monserrat;
   background:linear-gradient(  #5a113c,#959595);
 height: 100vh;
 }
+
+
 
 
 #Titcent {
@@ -74,4 +76,14 @@ border-radius: 10px;
 #btn-guardar-reins{
   border-radius: 10px;
   border: none;
+}
+
+
+/* Pagina prncipal */
+
+#Pag-principal{
+  background: #16BFFD;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #CB3066, #16BFFD);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #CB3066, #16BFFD); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
 }
