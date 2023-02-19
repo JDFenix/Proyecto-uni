@@ -1,0 +1,77 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-family:monserrat;
+  background:linear-gradient(  #5a113c,#959595);
+height: 100vh;
+}
+
+
+#Titcent {
+  color: rgb(255, 255, 255); text-align: center ;
+  padding-left: 20px;
+background-color: rgb(74, 14, 35);
+height: 80px;
+
+}
+
+#registrarAlumnos{
+  background-color: rgb(81, 20, 20);
+  color: white;
+  position: absolute;
+  top: 25%;
+  left: 20%;
+}
+#inscribir{
+  background-color: rgb(127, 124, 124);
+  padding: 40px;
+  width: max-content;
+  border: none;
+  border-radius: 10px;
+  position: absolute;
+  top: 35%;
+  left: 20%;
+}
+.Guardar01{
+  background-color: rgb(125, 40, 129);
+  text-align: center;
+  color: rgb(0, 0, 0);
+  border: none;
+border-radius: 10px;
+}
+#btn-guardar-inscripcion{
+  border-radius: 10px;
+  border: none;
+}
+#Cambiar-btn-ins{
+  border-radius: 10px;
+  border: none;
+}
+
+#tituloreinscirbir{
+  background-color: rgb(81, 20, 20);
+  color: white;
+  position: absolute;
+  top: 25%;
+  left: 55%;
+}
+#ReincribirAlumnos01{
+  
+  position: absolute;
+  top: 35%;
+  left: 55%;
+  background-color: rgb(127, 124, 124);
+  padding: 40px;
+  width: max-content;
+  border-width: 10px;
+  border-radius: 10px;
+ 
+}
+#Cambiar-btn{
+  border-radius: 10px;
+  border: none;
+}
+#btn-guardar-reins{
+  border-radius: 10px;
+  border: none;
+}
