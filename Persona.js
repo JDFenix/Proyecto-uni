@@ -1,30 +1,35 @@
- class Persona {
-    
+class Persona {
     nombre;
-    apellido_paterno;
-    apellido_materno;
-    fecha_nacimiento;
-    correo;
-    password;
-    constructor(nombre, apellido_paterno, apellido_materno, fecha_nacimiento, correo, password) {
-        this.nombre = nombre;
-        this.apellido_paterno = apellido_paterno;
-        this.apellido_materno = apellido_materno;
-        this.fecha_nacimiento = fecha_nacimiento;
-        this.correo = correo;
-        this.password = password;
+    apellido;
+    matricula;
+    nss;
+    fecha;
+    carrera;
+    grupo;
+
+    constructor(nombre, apellido, matricula, nss, fecha,carrera,grupo) {
+      this.nombre = nombre;
+      this.apellido = apellido;
+      this.matricula = matricula;
+      this.nss = nss;
+      this.fecha = fecha;
+      this.carrera=carrera;
+      this.grupo=grupo;
+    }
+        // this.correo = correo;
+        // this.password = password;
         
     }
 
-    actualizar_correo = function (correo) {
-        this.correo = correo
-        return correo;
-    }
-    actualizar_password = function (password) {
-        this.password = password
-        return password;
+    // actualizar_correo = function (correo) {
+    //     this.correo = correo
+    //     return correo;
+    // }
+    // actualizar_password = function (password) {
+    //     this.password = password
+    //     return password;
 
-    }
+    // }
 
     calcular_edad = function () {
         let fecha_actual = new Date();
@@ -49,7 +54,7 @@
     
 
 
-}
+
 
 
 
