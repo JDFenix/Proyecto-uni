@@ -12,7 +12,7 @@ height: 100vh;
 #Titcent {
   color: rgb(255, 255, 255); text-align: center ;
   padding-left: 20px;
-background-color: rgb(74, 14, 35);
+background-color: rgb(142, 0, 50);
 height: 80px;
 
 }
@@ -80,14 +80,6 @@ border-radius: 10px;
 }
 
 
-/* Pagina prncipal */
-
-#Pag-principal{
-  background: #16BFFD;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #CB3066, #16BFFD);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #CB3066, #16BFFD); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  
-}
 
 
 
@@ -111,17 +103,20 @@ border-radius: 10px;
 }
 
 button {
-  background-color: #337ab7;
-  color: #fff;
+  background-color:  rgb(137, 22, 22);
+  height: 80px;
+  color: #000000;
   border: none;
+  border-radius: 5px;
+  
   padding: 15px 20px;
   font-size: 18px;
-  border-radius: 5px;
+  
   cursor: pointer;
   margin: 10px;
   text-transform: uppercase;
-  letter-spacing: 2px;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  letter-spacing: 3px;
+  box-shadow: 10px 6px 6px rgba(0, 0, 0, 0.2);
   transition: transform 0.2s ease-in-out;
 }
 
@@ -136,6 +131,9 @@ button:hover {
   }
 }
 
+
+
+
 .Reinsscri{
   background-color: rgb(127, 124, 124);
   padding: 40px;
@@ -149,4 +147,18 @@ button:hover {
 }
 
 
+/* Pagina prncipal */
 
+#buttons{
+  border: none;
+  border-radius: 15px;
+  font-size: 300%;
+  padding-bottom: 6%;
+ width: 400px;
+}
+
+.Logotipo-uni{
+  position: absolute;
+top: 30px;
+width: 40px;
+}

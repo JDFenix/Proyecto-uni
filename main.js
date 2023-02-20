@@ -57,10 +57,14 @@ console.log(JSON.parse(datooos));
 
 }
 
-
-
-
-
+// function materiasbtn() {
+//   var materiasDiv = document.getElementById("materias");
+//   if (materiasDiv.style.display === "none") {
+//     materiasDiv.style.display = "block";
+//   } else {
+//     materiasDiv.style.display = "none";
+//   }
+// }
 
 
 
@@ -76,6 +80,7 @@ console.log(JSON.parse(datooos));
 //   console.log("Matrícula generada: " + matricula);
 //   document.getElementById("matricula").innerHTML = matricula;
 // }
+
 
 
 
