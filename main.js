@@ -22,14 +22,24 @@ function guardarDatosInscripcion() {
 
   alumnos.push(alum07);
 
-  localStorage.setItem("datos-guardar", JSON.stringify(alumnos));
+  localStorage.setItem("Alumnos-Datos", JSON.stringify(alumnos));
   alert('Datos guardados correctamente');
 
-  var datooos = localStorage.getItem("datos-guardar");
+  var datooos = localStorage.getItem("Alumnos-Datos");
   console.log(JSON.parse(datooos));
   document.getElementById("Cambiar-btn-ins").removeAttribute("disabled", "");
 
 }
+
+function Login (){
+  var nombre = document.getElementById("Nombre-alumno").value;
+  let apellido = document.getElementById("apellido").value;
+  let matricula = document.getElementById("matricula").value;
+localstorage.getitem("Alumnos-Datos",datooos)
+console.log(JSON.parse(datooos));
+  
+}
+
 
 
 
