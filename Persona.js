@@ -1,20 +1,14 @@
 class Persona {
     nombre;
     apellido;
-    matricula;
-    nss;
     fecha;
-    carrera;
-    grupo;
+    
 
-    constructor(nombre, apellido, matricula, nss, fecha,carrera,grupo) {
+    constructor(nombre, apellido, fecha) {
       this.nombre = nombre;
       this.apellido = apellido;
-      this.matricula = matricula;
-      this.nss = nss;
       this.fecha = fecha;
-      this.carrera=carrera;
-      this.grupo=grupo;
+    
     }
         // this.correo = correo;
         // this.password = password;
