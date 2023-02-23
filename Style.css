@@ -61,14 +61,14 @@
   color: white;
   position: absolute;
   top: 25%;
-  left: 55%;
+  left: 40%;
 }
 
 #ReincribirAlumnos01 {
 
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 40%;
+  left: 38%;
   background-color: rgb(127, 124, 124);
   padding: 40px;
   width: max-content;
@@ -103,6 +103,7 @@
 
 
 .contenedor {
+  font-size: 14px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -183,4 +184,64 @@ left: 60px;
   position: absolute;
   top: 21%;
   left: 65%;
+}
+
+/***************************************************/
+
+
+	.form {
+		max-width: 500px;
+		margin: 0 auto;
+		padding: 20px;
+		background-color: rgba(255, 255, 255, 0.8);
+		border-radius: 10px;
+		box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+	}
+	.input[type="text"], input[type="password"] {
+		padding: 10px;
+		border-radius: 5px;
+		border: none;
+		margin-bottom: 10px;
+	}
+	.input[type="submit"] {
+		background-color: #4CAF50;
+		color: white;
+		padding: 10px;
+		border: none;
+		border-radius: 5px;
+		cursor: pointer;
+	}
+
+  
+#Admin-log {
+
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  background-color: rgb(127, 124, 124);
+  padding: 40px;
+  width: max-content;
+  border-width: 10px;
+  border-radius: 10px;
+
+}
+.login-admin{
+background-color:rgb(137, 22, 22);
+color:#000000;
+padding: auto;
+border-radius: 10px;
+border: 5px;
+}
+
+
+.pagina-ins-reins {
+  font-size: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
 }

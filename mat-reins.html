@@ -30,59 +30,37 @@
 
 
         <title>Plantilla</title>
-    </head>
-    <body id="Pag-principal">
 
 
         <h1 id="Titcent">UNIVERSIDAD DEL VALLE </h1>
 
-        <h1 id="registrarAlumnos">Inscribir Alumnos</h1>
-        <div class="col col-12" id="inscribir">
-
-
-            <div>
-                <label for="Nombre-alumno">Nombre:</label>
-                <input type="text" id="Nombre-alumno"><br><br>
-            </div>
-
-            <div>
-                <label for="apellido">Apellido:</label>
-                <input type="text" id="apellido"><br><br>
-            </div>
-        
-            <div>
-                <label for="nss">nss:</label>
-                <input type="number" id="nss"><br><br>
-            </div>
-            <div>
-                <label for="edad">Fecha de nacimiento:</label>
-                <input type="date" id="edad"><br><br>
-            </div>
-            <div>
-                <label for="carrera">Carrera</label>
-                <input type="text" id="carrera"><br><br>
-            </div>
-        
+    </head>
+    <body id="Pag-principal">
 
 
 
-            <button onclick="guardarDatosInscripcion()">Guardar datos</button>
-            <button id="Cambiar-btn-ins"
-                onclick="location.href='INTPrincipal.html'" disabled>Ir a otra
-                página</button>
+          
+
+
         </div>
+        <button id="miCheckbox" onclick="materiasbtn()">Mostrar/Ocultar Materias</button>
+            <button onclick="">Mostrar selección</button>
+            <div id="seleccion"></div>
+            <div id="materias" style="display: none;">
+                <input type="checkbox" name="materia" value="Materia 1"> Quimica<br>
+                <input type="checkbox" name="materia" value="Materia 2"> Algebra
+                <br>
+                <input type="checkbox" name="materia" value="Materia 3">
+                Algoritmos<br>
+            </div>
 
+<br><br><br>
+            <label for="nombre">Ingresa tu nombre:</label>
+            <input type="text" id="names">
+            <button onclick="generarMatricula()">Guardar</button>
+            <p>Tu matrícula es: <span id="show_matricula"></span></p> 
 
-        
-        
+            
 
-        
-
-
-
-
-
-
-         
     </body>
 </html>
