@@ -14,30 +14,42 @@
   text-align: center;
   padding-left: 20px;
   background-color: rgb(142, 0, 50);
-  height: 80px;
+  height: 100px;
+  width: auto;
+  padding-top: 20px;
 
 }
 
 #registrarAlumnos {
-  background-color: rgb(81, 20, 20);
+  background-color: rgb(107, 27, 27);
   color: white;
   position: absolute;
-  top: 20%;
-  left: 20%;
+  top: 17%;
+  left: 40%;
+  width: auto;
+  height: auto;
+  border-radius: 10px;
 }
+  .input-full-width {
+    width: 100%;
+  }
+
 
 #inscribir {
   background-color: rgb(127, 124, 124);
-  padding: 40px;
+  padding: 30px;
   width: max-content;
   border: none;
   border-radius: 10px;
   position: absolute;
-  top: 30%;
-  left: 20%;
+  top: 26%;
+  left: 36%;
   box-sizing: content-box;
 }
 
+.carrera{
+  background-color: white;
+}
 .Guardar01 {
   background-color: rgb(125, 40, 129);
   text-align: center;
@@ -53,22 +65,32 @@
 
 #Cambiar-btn-ins {
   border-radius: 10px;
-  border: none;
+ 
+  height: max-content;
+ 
+  color: white;
+  border: 5px solid black;
+
 }
 
 #tituloreinscirbir {
-  background-color: rgb(81, 20, 20);
+  background-color:rgb(107, 27, 27);
   color: white;
   position: absolute;
   top: 25%;
-  left: 40%;
+  left: 39%;
+  width: auto;
+  height: auto;
+  border-radius: 10px;
+
+  
 }
 
 #ReincribirAlumnos01 {
 
   position: absolute;
-  top: 40%;
-  left: 38%;
+  top: 35%;
+  left: 36%;
   background-color: rgb(127, 124, 124);
   padding: 40px;
   width: max-content;
@@ -80,11 +102,17 @@
 #Cambiar-btn {
   border-radius: 10px;
   border: none;
+  
+  color: white;
+  border: 5px solid black;
 }
 
 #btn-guardar-reins {
   border-radius: 10px;
   border: none;
+  
+  color: white;
+  border: 5px solid black;
 }
 
 
@@ -93,7 +121,7 @@
 
 #link-alumno {
 
-  background-color: #5a113c;
+  background-color:rgb(137, 22, 22);
   color: white;
   border-color: black;
 }
@@ -137,6 +165,13 @@ button:hover {
   button {
     padding: 10px 20px;
     font-size: 14px;
+    
+  }
+}
+@media screen and (max-width: 600px) {
+  /* Para pantallas pequeñas, ajustar el ancho del botón */
+  button {
+    width: 100%;
   }
 }
 
@@ -164,13 +199,15 @@ button:hover {
   font-size: 300%;
   padding-bottom: 6%;
   width: 400px;
+  color: white;
+  border: 5px solid black;
 }
 
 .Logotipo-uni {
   position: absolute;
   width: 200px;
   height: 200px;
-  top: 12%;
+  top: 14%;
   left: 43%;
   
 }
@@ -178,39 +215,23 @@ button:hover {
 position: absolute;
 top: 18%;
 left: 60px;
+height: auto;
+  width: auto;
 }
  
 .Logo-derecha{
   position: absolute;
   top: 21%;
   left: 65%;
+  height: auto;
+  width: auto;
+  
 }
 
 /***************************************************/
 
 
-	.form {
-		max-width: 500px;
-		margin: 0 auto;
-		padding: 20px;
-		background-color: rgba(255, 255, 255, 0.8);
-		border-radius: 10px;
-		box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
-	}
-	.input[type="text"], input[type="password"] {
-		padding: 10px;
-		border-radius: 5px;
-		border: none;
-		margin-bottom: 10px;
-	}
-	.input[type="submit"] {
-		background-color: #4CAF50;
-		color: white;
-		padding: 10px;
-		border: none;
-		border-radius: 5px;
-		cursor: pointer;
-	}
+	
 
   
 #Admin-log {
@@ -235,13 +256,16 @@ border: 5px;
 
 
 .pagina-ins-reins {
-  font-size: 30px;
+  font-size: 14px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  cursor: pointer;
-  border: none;
-  border-radius: 10px;
+  margin-bottom: auto;
+}
+
+form{
+  width:  400px;
+  margin: auto;
 }

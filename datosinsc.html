@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width,
             initial-scale=1.0">
         <!--bootstrap-->
-        <link rel="stylesheet" href="Style.css">
+        <link rel="stylesheet" href="css/Style.css">
 
 
         <link
@@ -19,13 +19,12 @@
             integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
             crossorigin="anonymous"></script>
 
-        <script src="Grupo.js"></script>
-        <script src="Asignatura.js"></script>
-        <script src="carrera.js"></script>
-        <script src="Persona.js"></script>
-        <script src="Alumno.js"></script>
-        <script src="main.js"></script>
-
+            <script src="js/Grupo.js"></script>
+            <script src="js/Asignatura.js"></script>
+            <script src="js/carrera.js"></script>
+            <script src="js/Persona.js"></script>
+            <script src="js/Alumno.js"></script>
+            <script src="js/main.js"></script>
 
 
 
@@ -37,39 +36,40 @@
         <h1 id="Titcent">UNIVERSIDAD DEL VALLE </h1>
 
         <h1 id="registrarAlumnos">Inscribir Alumnos</h1>
-        <div class="col col-12" id="inscribir">
+        <div  id="inscribir" >
 
 
             <div>
                 <label for="Nombre-alumno">Nombre:</label>
-                <input type="text" id="Nombre-alumno"><br><br>
+                <input type="text" id="Nombre-alumno" class="input-full-width" placeholder="Nombre Completo"><br><br>
             </div>
 
             <div>
                 <label for="apellido">Apellido:</label>
-                <input type="text" id="apellido"><br><br>
+                <input type="text" class="input-full-width" id="apellido" placeholder="Apellidos Paterno y Materno"><br><br>
             </div>
         
             <div>
                 <label for="nss">nss:</label>
-                <input type="number" id="nss"><br><br>
+                <input type="number" maxlength="11" minlength="11" class="input-full-width" id="nss" placeholder="Numero de seguro social"><br><br>
             </div>
             <div>
                 <label for="edad">Fecha de nacimiento:</label>
-                <input type="date" id="edad"><br><br>
+                <input type="date" class="input-full-width" id="edad" placeholder="Fecha de nacimiento"><br><br>
             </div>
             <div>
                 <label for="carrera">Carrera</label>
-                <input type="text" id="carrera"><br><br>
-            </div>
+                <select class="input-full-width" id="carrera">
+                <option value="Ingenieria en Software">Ingenieria en Software</option>
+            </select>
+            </div><br>
         
 
 
+            <button id="Cambiar-btn-ins" onclick="guardarDatosInscripcion()">Guardar datos</button>
 
-            <button onclick="guardarDatosInscripcion()">Guardar datos</button>
             <button id="Cambiar-btn-ins"
-                onclick="location.href='INTPrincipal.html'" disabled>Ir a otra
-                página</button>
+                onclick="location.href='mat-reins.html'" disabled>Elegir Materias</button>
         </div>
 
 

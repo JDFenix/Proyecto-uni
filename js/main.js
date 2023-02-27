@@ -15,7 +15,7 @@ function guardarDatosInscripcion() {
   let nss = document.getElementById("nss").value;
   let fecha = document.getElementById("edad").value;
 
-  let alum07 = new Persona(nombre, apellido, nss,fecha);
+  let alum07 = new Persona(nombre, apellido, nss, fecha);
 
   alumnos.push(alum07);
 
@@ -26,16 +26,14 @@ function guardarDatosInscripcion() {
   console.log(JSON.parse(datooos));
   document.getElementById("Cambiar-btn-ins").removeAttribute("disabled", "");
 
+  alumnos.value = "";
+
+
+  
 }
 
-function Login() {
-  var nombre = document.getElementById("Nombre-alumno").value;
-  let apellido = document.getElementById("apellido").value;
-  let matricula = document.getElementById("matricula").value;
-  localstorage.getitem("Alumnos-Datos", datooos)
-  console.log(JSON.parse(datooos));
 
-}
+
 
 
 
@@ -44,15 +42,17 @@ function generarMatricula() {
   console.log("generarMatricula() se está ejecutando...");
   var nombre = document.getElementById("names").value;
   console.log("Nombre ingresado: " + nombre);
-  var daletra = nombre.substring(0,2).toUpperCase();
+  var daletra = nombre.substring(0, 2).toUpperCase();
   console.log("2daletra: " + daletra);
   var matricula = daletra + "-" + Math.floor(Math.random() * 100000);
   console.log("Matrícula generada: " + matricula);
   document.getElementById("show_matricula").innerHTML = matricula;
 
 
-  localStorage.setItem("Genrrerar_mat",JSON.stringify(matricula));
-console.log(localStorage.getItem(matricula))
+  localStorage.setItem("Genrrerar_mat", JSON.stringify(matricula));
+  console.log(localStorage.getItem(matricula))
+
+
 }
 
 
@@ -64,28 +64,36 @@ console.log(localStorage.getItem(matricula))
 
 function guardarDatosreinsc() {
   alert("datos generados ajua")
-    let names = document.getElementById("Nombre-alumno").value;
-    let matriculas = document.getElementById("matricula").value;
-    let grupos = document.getElementById("password").value;
-  
-    var datillos = {
-    matricula:matricula, contraseña:contraseña, grupo:grupo
-    }
-  
-  localStorage.setItem("datos-guardar",JSON.stringify (datillos));
+
+  let matriculas = document.getElementById("matricula").value;
+  let grupos = document.getElementById("password").value;
+
+  var datillos = {
+    matricula: matricula, contraseña: contraseña, grupo: grupo
+  }
+
+  localStorage.setItem("datos-guardar", JSON.stringify(datillos));
   alert('Datos guardados correctamente');
-  
+
   var datooos = localStorage.getItem("datos-guardar");
   console.log(JSON.parse(datooos));
-  
-    document.getElementById("Cambiar-btn").removeAttribute("disabled", "");
-    let animales ={
-      names:names,matriculas:matriculas,grupos:grupos
-    }
+
+  document.getElementById("Cambiar-btn").removeAttribute("disabled", "");
+
+  let result = alumnos.find(({ nombre }) => nombre === nombre.value);
+
+  if (result == undefined) {
+    users.push(user1);
+    localStorage.setItem('users', JSON.stringify(users));
+    alert("Usuario Registrado");
+    console.log(result);
+  }
   
   }
 
 
+
+/*************PAGINA DONDE SE SCOGEN MATERIAS */
 
 function materiasbtn() {
   var materiasDiv = document.getElementById("materias");
@@ -119,17 +127,18 @@ if (miCheckbox) {
 /********************************************************************************* */
 
 
-function validarDatos() {
-  var usuario = document.getElementById("usuario").value;
-  var contraseña = document.getElementById("contraseña").value;
+class Helper {
+  static getUsersFromLocalStorage() {
+    let users = [];
+    let arrayUsers = JSON.parse(localStorage.getItem('users'));
+    if (arrayUsers.length != 0) {
+      arrayUsers.forEach(userarray => {
+        let user2 = new User(userarray.email, userarray.password);
+        users.push(user2);
+      });
+    }
+    return users;
 
-  if (usuario == "" || contraseña == "") {
-    alert(" ");
-   
-  }else{
-    alert("datos incorrectos")
   }
-
-
 
 }

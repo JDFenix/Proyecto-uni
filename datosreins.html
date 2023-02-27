@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width,
             initial-scale=1.0">
         <!--bootstrap-->
-        <link rel="stylesheet" href="Style.css">
+        <link rel="stylesheet"href="css/Style.css">
 
 
         <link
@@ -19,12 +19,12 @@
             integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
             crossorigin="anonymous"></script>
 
-        <script src="Grupo.js"></script>
-        <script src="Asignatura.js"></script>
-        <script src="carrera.js"></script>
-        <script src="Persona.js"></script>
-        <script src="Alumno.js"></script>
-        <script src="main.js"></script>
+        <script src="js/Grupo.js"></script>
+        <script src="js/Asignatura.js"></script>
+        <script src="js/carrera.js"></script>
+        <script src="js/Persona.js"></script>
+        <script src="js/Alumno.js"></script>
+        <script src="js/main.js"></script>
 
 
 
@@ -40,17 +40,16 @@
         <h1 id="tituloreinscirbir">Reinscribir Alumnos</h1>
         <div id="ReincribirAlumnos01">
 
-            <form>
+        
                 <div>
                     <label for="number">matricula:</label>
-                    <input type="number" id="matricula"><br><br>
+                    <input type="number" class="input-full-width" id="matricula"><br><br>
                 </div>
                 <div>
                     <label for="password">Password:</label>
-                    <input type="password" id="password" "><br><br>
+                    <input class="input-full-width" type="password" id="password" "><br><br>
                 </div>
 
-            </form>
 
             <button id="btn-guardar-reins" onclick="guardarDatosreinsc()">Guardar
                 datos</button>
