@@ -53,7 +53,7 @@
                   </div>
                   <div class="mb-3">
                     <label for="nss" class="form-label">NSS</label>
-                    <input type="int" class="form-control" id="nss" placeholder="Ingresa tu NSS">
+                    <input type="int" class="form-control" minlength="11" maxlength="11" id="nss" placeholder="Ingresa tu NSS">
                   </div>
                   <div class="mb-3">
                     <label for="fecha" class="form-label">Fecha de nacimiento</label>
@@ -69,16 +69,24 @@
                   </div>
                   <div class="mb-3">
                     <label for="contraseña" class="form-label">Contraseña</label>
-                    <input type="varchar" class="form-control" id="contraseña" placeholder="********">
+                    <input type="password" class="form-control" id="contraseña" placeholder="********">
+                  </div >
+                  <br>
+                  <div class="mb-3">
+                    <label for="matricula-gen" class="form-label">Su Matricula Asinada es: </label> <div id="matricula-gen"></div> 
                   </div>
                   <br>
                   <div class="mb-3">
-                    <a href="formreinscripcion.html" class="btn btn-danger form-control">Guardar</a>
+                    <input type="button" class="btn btn-danger form-control" onclick="guardarDatosInscripcion(); generarMatricula();" value=" registrar">
                   </div>
                   <div class="mb-3">
-                    <a href="Pantalla1" class="btn btn-secondary form-control">Menu</a>
+                    <a href="eleccionmaterias.html" class="btn btn-secondary form-control">Eleccion de materias</a>
+                  </div>
+                  <div class="mb-3">
+                    <a href="pantalla1.html" class="btn btn-secondary form-control">Menu</a>
                   </div>
             </form>
+          
         </div>
     </div>
     <!--Fin formulario-->

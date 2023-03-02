@@ -9,27 +9,28 @@ var alumnos = [];
 //pagina inscripcion alumno
 function guardarDatosInscripcion() {
 
-  // let matricula = document.getElementById("matricula").value;
-  var nombre = document.getElementById("Nombre-alumno").value;
-  let apellido = document.getElementById("apellido").value;
+  var nombre = document.getElementById("nombre").value;
+  let apellido_pat = document.getElementById("ap-paterno").value;
+  let apellido_mat = document.getElementById("ap-materno").value;
+  let promedio_bachillerato = document.getElementById("promedio").value; 
   let nss = document.getElementById("nss").value;
-  let fecha = document.getElementById("edad").value;
+  let fecha = document.getElementById("fecha").value;
+  let correo = document.getElementById("correo").value
+  let contraseña = document.getElementById("contraseña").value;
 
-  let alum07 = new Persona(nombre, apellido, nss, fecha);
+  //se obtiene la matricual dependiendo al nombre
+ let matricula_gen = document.getElementById("matricula-gen");
+ var daletra = nombre.substring(0, 2).toUpperCase();
+ var matricula = daletra + "-" + Math.floor(Math.random() * 1000000);
+ matricula_gen.innerHTML = matricula;
 
+ /*se guarda el alumno en local */
+  let alum07 = new Alumno(nombre, apellido_pat,apellido_mat, nss, fecha,promedio_bachillerato,correo,contraseña,matricula);
   alumnos.push(alum07);
-
   localStorage.setItem("Datos-Alumnos", JSON.stringify(alumnos));
   alert('Datos guardados correctamente');
-
-  var datooos = localStorage.getItem("Datos-Alumnos");
-  console.log(JSON.parse(datooos));
-  document.getElementById("Cambiar-btn-ins").removeAttribute("disabled", "");
-
-  alumnos.value = "";
-
-
-  
+  var datos_almns = localStorage.getItem("Datos-Alumnos");
+  console.log(JSON.parse(datos_almns));
 }
 
 
@@ -39,21 +40,14 @@ function guardarDatosInscripcion() {
 
 
 function generarMatricula() {
-  console.log("generarMatricula() se está ejecutando...");
-  var nombre = document.getElementById("names").value;
-  console.log("Nombre ingresado: " + nombre);
-  var daletra = nombre.substring(0, 2).toUpperCase();
-  console.log("2daletra: " + daletra);
-  var matricula = daletra + "-" + Math.floor(Math.random() * 100000);
-  console.log("Matrícula generada: " + matricula);
-  document.getElementById("show_matricula").innerHTML = matricula;
 
-
-  localStorage.setItem("Genrrerar_mat", JSON.stringify(matricula));
-  console.log(localStorage.getItem(matricula))
-
-
+  let nombre_ingresado = document.getElementById("nombre").value
 }
+
+
+
+
+
 
 
 /******************************************************************** */

@@ -1,12 +1,14 @@
 class Persona {
     nombre;
-    apellido;
+    apellido_pat;
+    apellido_mat;
     fecha;
     
 
-    constructor(nombre, apellido, fecha) {
+    constructor(nombre, apellido_pat,apellido_mat, fecha) {
       this.nombre = nombre;
-      this.apellido = apellido;
+      this.apellido_pat = apellido_pat;
+      this.apellido_mat= apellido_mat;
       this.fecha = fecha;
     
     }
