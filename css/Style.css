@@ -139,41 +139,8 @@
   height: 100vh;
 }
 
-button {
-  background-color: rgb(137, 22, 22);
-  height: 80px;
-  color: #000000;
-  border: none;
-  border-radius: 5px;
 
-  padding: 15px 20px;
-  font-size: 18px;
 
-  cursor: pointer;
-  margin: 10px;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  box-shadow: 10px 6px 6px rgba(0, 0, 0, 0.2);
-  transition: transform 0.2s ease-in-out;
-}
-
-button:hover {
-  transform: scale(1.1);
-}
-
-@media screen and (max-width: 768px) {
-  button {
-    padding: 10px 20px;
-    font-size: 14px;
-    
-  }
-}
-@media screen and (max-width: 600px) {
-  /* Para pantallas pequeñas, ajustar el ancho del botón */
-  button {
-    width: 100%;
-  }
-}
 
 
 
@@ -207,13 +174,13 @@ button:hover {
   position: absolute;
   width: 200px;
   height: 200px;
-  top: 14%;
+  top: 18%;
   left: 43%;
   
 }
 .Logo-izquierda{
 position: absolute;
-top: 18%;
+top: 22%;
 left: 60px;
 height: auto;
   width: auto;
@@ -221,7 +188,7 @@ height: auto;
  
 .Logo-derecha{
   position: absolute;
-  top: 21%;
+  top: 22%;
   left: 65%;
   height: auto;
   width: auto;

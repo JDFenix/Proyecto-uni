@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width,
             initial-scale=1.0">
         <!--bootstrap-->
-        <link rel="stylesheet"href="css/Style.css">
+        <link rel="stylesheet" href="css/Style.css">
 
 
         <link
@@ -19,6 +19,7 @@
             integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
             crossorigin="anonymous"></script>
 
+        <script src="js/Helper.js"></script>
         <script src="js/Grupo.js"></script>
         <script src="js/Asignatura.js"></script>
         <script src="js/carrera.js"></script>
@@ -40,28 +41,20 @@
         <h1 id="tituloreinscirbir">Reinscribir Alumnos</h1>
         <div id="ReincribirAlumnos01">
 
-        
-                <div>
-                    <label for="number">matricula:</label>
-                    <input type="number" class="input-full-width" id="matricula"><br><br>
-                </div>
-                <div>
-                    <label for="password">Password:</label>
-                    <input class="input-full-width" type="password" id="password" "><br><br>
-                </div>
+
+            <div>
+                <label for="email">correo:</label>
+                <input type="email" class="input-full-width" id="correo"><br><br>
+            </div>
+            <div>
+                <label for="contraseña">Password:</label>
+                <input class="input-full-width" type="password" id="contraseña" "><br><br>
+            </div>
 
 
-            <button id="btn-guardar-reins" onclick="guardarDatosreinsc()">Guardar
+            <button id="btn-guardar-reins" onclick="registrador()">Guardar
                 datos</button>
             <button id="Cambiar-btn"
                 onclick="location.href='mat-reins.html'" disabled>Iniciar Secion</button>
-
-
-
-          
-
-
-            
-
-    </body>
-</html>
+        </body>
+    </html>

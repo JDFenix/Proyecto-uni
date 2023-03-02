@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width,
             initial-scale=1.0">
         <!--bootstrap-->
-        <link rel="stylesheet" href="Style.css">
+        <link rel="stylesheet" href="css/Style.css">
 
 
         <link
@@ -19,12 +19,12 @@
             integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
             crossorigin="anonymous"></script>
 
-        <script src="Grupo.js"></script>
-        <script src="Asignatura.js"></script>
-        <script src="carrera.js"></script>
-        <script src="Persona.js"></script>
-        <script src="Alumno.js"></script>
-        <script src="main.js"></script>
+        <script src="js/Grupo.js"></script>
+        <script src="js/Asignatura.js"></script>
+        <script src="js/carrera.js"></script>
+        <script src="js/Persona.js"></script>
+        <script src="js/Alumno.js"></script>
+        <script src="js/main.js"></script>
 
 
 
@@ -34,33 +34,74 @@
 
         <h1 id="Titcent">UNIVERSIDAD DEL VALLE </h1>
 
-    </head>
-    <body id="Pag-principal">
 
+        <form id="asignaturas_lista">
+
+            <input type="checkbox"  value="1">
+            <label for="opcion1">Matematicas </label><br>
+
+            <input type="checkbox" value="1">
+            <label for="opcion2">Calculo </label><br>
+
+            <input type="checkbox" value="Quimica">
+            <label for="opcion3">Quimica</label><br>
+
+            <input type="checkbox" value="algoritmos">
+            <label  for="opcion3" >algoritmos</label><br>
+
+            <input type="checkbox" value="Fundamentos de computacion">
+            <label  for="opcion3" >Fundamentos de computacion</label><br>
+
+            <input type="checkbox" value="POO">
+            <label  for="opcion3" >POO</label><br>
+
+            <input type="checkbox" value="Estructura de datos">
+            <label  for="opcion3" >Estructura de datos</label><br>
+
+            <input type="checkbox" value="Ingles">
+            <label  for="opcion3" >Ingles</label><br>
+
+            <input type="checkbox" value="Inteligencia artificial">
+            <label  for="opcion3" >Inteligencia artificial</label><br>
+
+
+            <button id="env_form" type="button" onclick="enviarFormulario()"   >Enviar</button>
+          
+          </form>
 
 
           
 
+          
 
-        </div>
-        <button id="miCheckbox" onclick="materiasbtn()">Mostrar/Ocultar Materias</button>
-            <button onclick="">Mostrar selección</button>
-            <div id="seleccion"></div>
-            <div id="materias" style="display: none;">
-                <input type="checkbox" name="materia" value="Materia 1"> Quimica<br>
-                <input type="checkbox" name="materia" value="Materia 2"> Algebra
-                <br>
-                <input type="checkbox" name="materia" value="Materia 3">
-                Algoritmos<br>
-            </div>
+          
 
-<br><br><br>
-            <label for="nombre">Ingresa tu nombre:</label>
-            <input type="text" id="names">
-            <button onclick="generarMatricula()">Guardar</button>
-            <p>Tu matrícula es: <span id="show_matricula"></span></p> 
 
-            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+
+        <br><br><br>
+        <label for="nombre">Ingresa tu nombre:</label>
+        <input type="text" id="names">
+        <button onclick="generarMatricula()">Guardar</button>
+        <p>Tu matrícula es: <span id="show_matricula"></span></p>
+
+
 
     </body>
-</html>
+</html> -->

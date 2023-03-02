@@ -1,12 +1,11 @@
 //subclase Alumno
 class Alumno extends Persona  {
-      matricula;
-      contraseña;
+      matricula
        nss;
     
     
-    constructor( matricula, nss) {
-        super(nombre,apellido,fecha)
+    constructor( nombre, apellido, fecha,correo,contraseña,matricula, nss) {
+        super(nombre, apellido, fecha,correo,contraseña);
        
          this.matricula=matricula;
          this.nss = nss;
@@ -18,6 +17,8 @@ class Alumno extends Persona  {
 //         this.materias.push(materias);
 //         return materias;
 //     }
+
+
  }
 
 
