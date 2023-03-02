@@ -11,16 +11,16 @@ var alumnos = [];
   
    // let matricula = document.getElementById("matricula").value;
    var nombre = document.getElementById("nombre").value;
-   let ap_pat = document.getElementById("ap-paterno").value;
-   let ap_mat = document.getElementById("ap-materno").value;
-   let numss = document.getElementById("nss").value;
+   let apellido_paterno = document.getElementById("ap-paterno").value;
+   let apellido_materno = document.getElementById("ap-materno").value;
+   let nss = document.getElementById("nss").value;
    let fecha = document.getElementById("fecha").value;
    let prom_bach = document.getElementById("promedio")
    let correo = document.getElementById("correo").value;
    let contraseña = document.getElementById("contraseña").value;
 
 
-   let alum07 = new Alumno(nombre, apellido,fecha,correo, contraseña);
+   let alum07 = new Alumno(nombre, apellido_materno,apellido_paterno, fecha,correo,contraseña);
 
   alumnos.push(alum07);
    localStorage.setItem("Datos-Alumnos", JSON.stringify(alumnos));
@@ -143,6 +143,41 @@ var alumnos = [];
 
 // }
 /*********************************************************************************************** */
+
+
+
+
+//     agregar_materia = function (materias) {
+//         this.materias.push(materias);
+//         return materias;
+//     }
+
+
+
+// actualizar_correo = function (correo) {
+//   this.correo = correo;
+//   return correo;
+// }
+// actualizar_password = function (password) {
+//   this.password = password;
+//   return password;
+// }
+
+
+
+// login(alumnos){
+//  let result = alumnos.find(({ correo }) => correo === this.correo);
+//  if(result == undefined){
+//      return "El usuario no se encuentra registrado";
+//  } 
+//  else{
+     
+//      return result.password == this.password ? true : 'Contraseña incorrecta';
+      
+//  }
+
+ 
+// }
 
 
 

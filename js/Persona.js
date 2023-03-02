@@ -1,57 +1,17 @@
+
 class Persona {
     nombre;
-    apellido;
+    apellido_materno;
+    apellido_paterno;
     fecha;
-    corre;
+    correo;
     contraseña;
-
-    constructor(nombre, apellido, fecha,correo,contraseña) {
-      this.nombre = nombre;
-      this.apellido = apellido;
-      this.fecha = fecha;
-      this.correo = correo;
-      this.password = contraseña;
-    
-    }
-        
-        
-    
-
-     actualizar_correo = function (correo) {
-         this.correo = correo;
-         return correo;
-     }
-     actualizar_password = function (password) {
-         this.password = password;
-         return password;
-     }
-     
-
-
-    login(alumnos){
-        let result = alumnos.find(({ correo }) => correo === this.correo);
-        if(result == undefined){
-            return "El usuario no se encuentra registrado";
-        } 
-        else{
-            
-            return result.password == this.password ? true : 'Contraseña incorrecta';
-             
-        }
-
-        
+    constructor(nombre, apellido_materno, apellido_paterno, fecha, correo, contraseña) {
+        this.nombre = nombre;
+        this.apellido_materno = apellido_materno;
+        this.apellido_paterno = apellido_paterno;
+        this.fecha = fecha;
+        this.correo = correo;
+        this.contraseña = contraseña;
     }
 }
-
-    
-
-
-
-
-
-
-
-
-
-
-
