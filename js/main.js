@@ -10,9 +10,12 @@ var alumnos = [];
  function guardarDatosInscripcion() {
   
    // let matricula = document.getElementById("matricula").value;
-   var nombre = document.getElementById("Nombre-alumno").value;
-   let apellido = document.getElementById("apellido").value;
-   let fecha = document.getElementById("edad").value;
+   var nombre = document.getElementById("nombre").value;
+   let ap_pat = document.getElementById("ap-paterno").value;
+   let ap_mat = document.getElementById("ap-materno").value;
+   let numss = document.getElementById("nss").value;
+   let fecha = document.getElementById("fecha").value;
+   let prom_bach = document.getElementById("promedio")
    let correo = document.getElementById("correo").value;
    let contraseña = document.getElementById("contraseña").value;
 
@@ -25,7 +28,6 @@ var alumnos = [];
   var datooos = localStorage.getItem("Datos-Alumnos");
    console.log(JSON.parse(datooos));
    
-   document.getElementById("Cambiar-btn-ins").removeAttribute("disabled", "");
  
 
   
