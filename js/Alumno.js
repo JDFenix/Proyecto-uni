@@ -6,7 +6,7 @@ class Alumno extends Persona  {
       contraseña;
        nss;
     
-    
+    //Se crea una clase alumno con los anteriores datos
     constructor(nombre, apellido_pat,apellido_mat, nss, fecha,promedio_bachillerato,correo,contraseña,matricula) {
         super(nombre, apellido_pat,apellido_mat, fecha)
        
@@ -17,6 +17,7 @@ class Alumno extends Persona  {
          this.nss = nss;
         
     }
+
 
 
 //     agregar_materia = function (materias) {

@@ -25,7 +25,7 @@ function guardarDatosInscripcion() {
   var matricula = daletra + "-" + Math.floor(Math.random() * 1000000);
   matricula_gen.innerHTML = matricula;
 
-
+//todos los datos ingresados se guardan en una variable de clase alumno
   let alum07 = new Alumno(nombre, apellido_pat, apellido_mat, nss, fecha, promedio_bachillerato, correo, contraseña, matricula);
   alumnos.push(alum07);
 
@@ -36,16 +36,15 @@ function guardarDatosInscripcion() {
 
   let verificacion_name = dts.find(({ apellido_pat, apellido_mat, correo }) => apellido_pat === alum07.apellido_pat && apellido_mat === alum07.apellido_mat && correo === alum07.correo);
 
-
+//si el alumno ya esta registrado  o se guardaran sus datos 
   if (verificacion_name === undefined) {
-    // el alumno no está duplicado en el localstorage, puedes continuar con la lógica de tu programa aquí
+    // el alumno no está duplicado en el localstorage
     localStorage.setItem("Datos-Alumnos", JSON.stringify(alumnos));
     alert('Datos guardados correctamente');
+    window.location.href="eleccionmaterias.html"
   } else {
     alert("ALUMNO NO REGISTRADO, VERIFIQUE SUS DATOS!");
   }
-
-
 }
 
 
