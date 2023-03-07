@@ -13,7 +13,7 @@ function login() {
     if (usuarioExistente === undefined) {
       alert("Correo o Contraseña incorrectos")
     } else {
-        window.location.href = 'eleccionmaterias.html';
+        window.location.href = 'areabasica.html';
     }
 
   }

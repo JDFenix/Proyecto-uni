@@ -17,25 +17,6 @@
   </head>
   <body>
 
-    <select id="producto" name="producto" onchange="ShowSelected();">
-      <option value="1">quimica One</option>
-      <option value="13">Texto Two</option>
-    </select>
-    <button onclick="ShowSelected()">guardar</button>
-
-    <script type="text/javascript">
-      function ShowSelected()
-      {
-      /* Para obtener el valor */
-      var cod = document.getElementById("producto").value;
-      alert(cod);
-       
-      /* Para obtener el texto */
-      var combo = document.getElementById("producto");
-      var selected = combo.options[combo.selectedIndex].text;
-      alert(selected);
-      }
-      </script>
     <!--Inicio barra superior-->
     <nav class="navbar bg-danger" data-bs-theme="dark">
       <div class="container-fluid">

@@ -20,20 +20,20 @@ function generar_materia() {
 
 function guardarDatosInscripcion() {
   var nombre = document.querySelector("#nombre").value;
-  var ap_paterno = document.querySelector("#ap_paterno").value;
-  var ap_materno = document.querySelector("#ap_materno").value;
+  var apellido_pat = document.querySelector("#ap_paterno").value;
+  var apellido_mat = document.querySelector("#ap_materno").value;
   var nss = document.querySelector("#nss").value;
   var fecha = document.querySelector("#fecha").value;
-  var promedio = document.querySelector("#promedio").value;
+  var promedio_bachillerato = document.querySelector("#promedio").value;
   var correo = document.querySelector("#correo").value;
   var contraseña = document.querySelector("#contraseña").value;
 
   if (nombre.trim() === '' ||
-    ap_paterno.trim() === '' ||
-    ap_materno.trim() === '' ||
+  apellido_pat.trim() === '' ||
+    apellido_mat.trim() === '' ||
     nss.trim() === '' ||
     fecha.trim() === '' ||
-    promedio.trim() === '' ||
+    promedio_bachillerato.trim() === '' ||
     correo.trim() === '' ||
     contraseña.trim() === '') {
 
@@ -72,7 +72,7 @@ function guardar_alumnos() {
     alumnos.push(alum07);
     localStorage.setItem("Datos-Alumnos", JSON.stringify(alumnos));
     alert('Datos guardados correctamente');
-    // window.location.href = "eleccionmaterias.html"
+     window.location.href = "areabasica.html"
   } else {
     alert("ALUMNO YA REGISTRADO!");
   }
