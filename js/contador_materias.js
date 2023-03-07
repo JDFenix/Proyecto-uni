@@ -29,7 +29,7 @@ function seleccionar_materias() {
 
 
         alert('materias guardadas');
-         window.location.href = "eleccionmaterias.html";
+        //  window.location.href = "eleccionmaterias.html";
 
     } else {
         alert("El número  de materias basicas debe ser igual a 2 ")
