@@ -17,8 +17,25 @@
   </head>
   <body>
 
+    <select id="producto" name="producto" onchange="ShowSelected();">
+      <option value="1">quimica One</option>
+      <option value="13">Texto Two</option>
+    </select>
+    <button onclick="ShowSelected()">guardar</button>
 
-
+    <script type="text/javascript">
+      function ShowSelected()
+      {
+      /* Para obtener el valor */
+      var cod = document.getElementById("producto").value;
+      alert(cod);
+       
+      /* Para obtener el texto */
+      var combo = document.getElementById("producto");
+      var selected = combo.options[combo.selectedIndex].text;
+      alert(selected);
+      }
+      </script>
     <!--Inicio barra superior-->
     <nav class="navbar bg-danger" data-bs-theme="dark">
       <div class="container-fluid">
@@ -50,55 +67,133 @@
             </li>
             <li class="list-group-item">
               <input class="form-check-input me-1" type="checkbox"
-                name="materias[]" value="2"
-                id="2">
-              <label class="form-check-label" for="secondCheckbox">Sociologia
-                dela Empresa</label>
+                name="materias[]" value="2" id="2">
+              <label class="form-check-label" for="secondCheckbox">Sociologia de
+                la Empresa</label>
             </li>
             <li class="list-group-item">
               <input class="form-check-input me-1" type="checkbox"
-                name="materias[]" value="3"
-                id="3">
+                name="materias[]" value="3" id="3">
               <label class="form-check-label" for="thirdCheckbox">Tecnicas de
                 negociacion</label>
             </li>
             <li class="list-group-item">
               <input class="form-check-input me-1" type="checkbox"
-                name="materias[]" value="4"
-                id="4">
+                name="materias[]" value="4" id="4">
               <label class="form-check-label" for="firstCheckbox">Microeconomia</label>
             </li>
-          </ul>
-        </div>
-        <ul class="list-group">
-          <li class="list-group-item">
-            <input class="form-check-input me-1" type="checkbox"
-              name="materias[]" value="5" id="5">
-            <label class="form-check-label" for="secondCheckbox">Macroeconomia</label>
-          </li>
-          <li class="list-group-item">
-            <input class="form-check-input me-1" type="checkbox"
-              name="materias[]"
-              value="6"
-              id="6">
-            <label class="form-check-label" for="thirdCheckbox">IA</label>
-          </li>
-          <li class="list-group-item">
-            <input class="form-check-input me-1" type="checkbox" value=""
-              id="7">
-            <label class="form-check-label" for="firstCheckbox">materia</label>
-          </li>
-          <li class="list-group-item">
-            <input class="form-check-input me-1" type="checkbox" value=""
-              id="8">
-            <label class="form-check-label" for="secondCheckbox">materia</label>
+            <li class="list-group-item">
+              <input class="form-check-input me-1" type="checkbox"
+                name="materias[]" value="5" id="5">
+              <label class="form-check-label" for="firstCheckbox">Macroeconomia</label>
+            </li>
+            <li class="list-group-item">
+              <input class="form-check-input me-1" type="checkbox"
+                name="materias[]" value="6" id="6">
+              <label class="form-check-label" for="firstCheckbox">Contabilidad</label>
+            </li>
+            <li class="list-group-item">
+              <input class="form-check-input me-1" type="checkbox"
+                name="materias[]" value="7" id="7">
+              <label class="form-check-label" for="firstCheckbox">Costos y
+                Presupuestos</label>
+            </li>
+            <li class="list-group-item">
+              <input class="form-check-input me-1" type="checkbox"
+                name="materias[]" value="8" id="8">
+              <label class="form-check-label" for="firstCheckbox">Administracion
+                Financiera</label>
+            </li>
+            <li class="list-group-item">
+              <input class="form-check-input me-1" type="checkbox"
+                name="materias[]" value="9" id="9">
+              <label class="form-check-label" for="firstCheckbox">La Funcion
+                Informatica</label>
+            </li>
+            <li class="list-group-item">
+              <input class="form-check-input me-1" type="checkbox"
+                name="materias[]" value="10" id="10">
+              <label class="form-check-label" for="firstCheckbox">Procesos de
+                Texto y Presentaciones Electronicas</label>
+            </li>
+            <li class="list-group-item">
+              <input class="form-check-input me-1" type="checkbox"
+                name="materias[]" value="11" id="11">
+              <label class="form-check-label" for="firstCheckbox">Hoja de
+                Calculo</label>
+            </li>
+            <li class="list-group-item">
+              <input class="form-check-input me-1" type="checkbox"
+                name="materias[]" value="12" id="12">
+              <label class="form-check-label" for="firstCheckbox">Algebra</label>
+            </li>
+            <li class="list-group-item">
+              <input class="form-check-input me-1" type="checkbox"
+                name="materias[]" value="13" id="13">
+              <label class="form-check-label" for="thirdCheckbox">Matematicas
+                Discretas</label>
+            </li>
+            <li class="list-group-item">
+              <input class="form-check-input me-1" type="checkbox"
+                name="materias[]" value="14" id="14">
+              <label class="form-check-label" for="firstCheckbox">Calculo</label>
+            </li>
+            <li class="list-group-item">
+              <input class="form-check-input me-1" type="checkbox"
+                name="materias[]" value="15" id="15">
+              <label class="form-check-label" for="firstCheckbox">Estadistica</label>
+            </li>
+            <li class="list-group-item">
+              <input class="form-check-input me-1" type="checkbox"
+                name="materias[]" value="16" id="16">
+              <label class="form-check-label" for="firstCheckbox">Investigacion
+                de Operaciones</label>
+            </li>
+            <li class="list-group-item">
+              <input class="form-check-input me-1" type="checkbox"
+                name="materias[]" value="17" id="17">
+              <label class="form-check-label" for="firstCheckbox">Evaluacion de
+                Proyectos de Inversion</label>
+            </li>
+            <li class="list-group-item">
+              <input class="form-check-input me-1" type="checkbox"
+                name="materias[]" value="18" id="18">
+              <label class="form-check-label" for="firstCheckbox">Probabilidad</label>
+            </li>
+            <li class="list-group-item">
+              <input class="form-check-input me-1" type="checkbox"
+                name="materias[]" value="19" id="19">
+              <label class="form-check-label" for="firstCheckbox">Ingles I</label>
+            </li>
+            <li class="list-group-item">
+              <input class="form-check-input me-1" type="checkbox"
+                name="materias[]" value="20" id="20">
+              <label class="form-check-label" for="firstCheckbox">Ingles II</label>
+            </li>
+            <li class="list-group-item">
+              <input class="form-check-input me-1" type="checkbox"
+                name="materias[]" value="21" id="21">
+              <label class="form-check-label" for="firstCheckbox">Ingles III</label>
+            </li>
+            <li class="list-group-item">
+              <input class="form-check-input me-1" type="checkbox"
+                name="materias[]" value="22" id="22">
+              <label class="form-check-label" for="firstCheckbox">Ingles IV</label>
+            </li>
+            <li class="list-group-item">
+              <input class="form-check-input me-1" type="checkbox"
+                name="materias[]" value="23" id="23">
+              <label class="form-check-label" for="firstCheckbox">Ingles V</label>
+            </li>
           </li>
         </ul>
 
 
+
+
         <div class="container">
           <div class="text-center">
-            <h3>MATERIAS AREA METODOLOGIA</h3>
+            <h3>MATERIAS AREA PROFESIONAL</h3>
           </div>
           <br>
 
@@ -108,167 +203,364 @@
             <!--Inicio de lista-->
             <ul class="list-group">
               <li class="list-group-item">
-                <input class="form-check-input me-1" type="checkbox" value="1"
-                  id="1">
-                <label class="form-check-label" for="firstCheckbox">maternthbgffdia</label>
+                <input class="form-check-input me-1" type="checkbox"
+                  name="materias[]" value="24" id="24">
+                <label class="form-check-label" for="firstCheckbox">Arquitectura
+                  de Computadoras</label>
               </li>
               <li class="list-group-item">
-                <input class="form-check-input me-1" type="checkbox" value="1"
-                  id="2">
-                <label class="form-check-label" for="secondCheckbox">mafvrvfcdsteria</label>
+                <input class="form-check-input me-1" type="checkbox"
+                  name="materias[]" value="25" id="25">
+                <label class="form-check-label" for="firstCheckbox">Analisis de
+                  requerimientos de SW</label>
               </li>
               <li class="list-group-item">
-                <input class="form-check-input me-1" type="checkbox" value="1"
-                  id="3">
-                <label class="form-check-label" for="thirdCheckbox">mategfria</label>
+                <input class="form-check-input me-1" type="checkbox"
+                  name="materias[]" value="26" id="26">
+                <label class="form-check-label" for="firstCheckbox">Fundamentos
+                  de programacion</label>
               </li>
               <li class="list-group-item">
-                <input class="form-check-input me-1" type="checkbox" value="1"
-                  id="4">
-                <label class="form-check-label" for="firstCheckbox">materia</label>
+                <input class="form-check-input me-1" type="checkbox"
+                  name="materias[]" value="27" id="27">
+                <label class="form-check-label" for="firstCheckbox">Comunicacion
+                  de Datos </label>
               </li>
               <li class="list-group-item">
-                <input class="form-check-input me-1" type="checkbox" value=""
-                  id="5">
-                <label class="form-check-label" for="secondCheckbox">materia</label>
+                <input class="form-check-input me-1" type="checkbox"
+                  name="materias[]" value="28" id="28">
+                <label class="form-check-label" for="firstCheckbox">Redes de
+                  Computadoras I</label>
               </li>
               <li class="list-group-item">
-                <input class="form-check-input me-1" type="checkbox" value=""
-                  id="6">
-                <label class="form-check-label" for="thirdCheckbox">materia</label>
+                <input class="form-check-input me-1" type="checkbox"
+                  name="materias[]" value="29" id="29">
+                <label class="form-check-label" for="firstCheckbox">Redes de
+                  Computadoras II</label>
               </li>
               <li class="list-group-item">
-                <input class="form-check-input me-1" type="checkbox" value=""
-                  id="7">
-                <label class="form-check-label" for="firstCheckbox">materia</label>
+                <input class="form-check-input me-1" type="checkbox"
+                  name="materias[]" value="30" id="30">
+                <label class="form-check-label" for="firstCheckbox">Teorias de
+                  Lenguaje y Compiladores</label>
+              </li>
+              <li class="list-group-item">
+                <input class="form-check-input me-1" type="checkbox"
+                  name="materias[]" value="31" id="31">
+                <label class="form-check-label" for="firstCheckbox">Sistemas
+                  Operativos</label>
+              </li>
+              <li class="list-group-item">
+                <input class="form-check-input me-1" type="checkbox"
+                  name="materias[]" value="32" id="32">
+                <label class="form-check-label" for="firstCheckbox">Laboratorios
+                  de Computacion</label>
+              </li>
+              <li class="list-group-item">
+                <input class="form-check-input me-1" type="checkbox"
+                  name="materias[]" value="33" id="33">
+                <label class="form-check-label" for="firstCheckbox">Laboratorio
+                  de sistemas Abiertos y Comunicaciones </label>
+              </li>
+              <li class="list-group-item">
+                <input class="form-check-input me-1" type="checkbox"
+                  name="materias[]" value="34" id="34">
+                <label class="form-check-label" for="firstCheckbox">Metodologia
+                  de la Programacion </label>
+              </li>
+              <li class="list-group-item">
+                <input class="form-check-input me-1" type="checkbox"
+                  name="materias[]" value="35" id="35">
+                <label class="form-check-label" for="firstCheckbox">Algoritmicas
+                  y Estructuras de Datos I</label>
+              </li>
+              <li class="list-group-item">
+                <input class="form-check-input me-1" type="checkbox"
+                  name="materias[]" value="36" id="36">
+                <label class="form-check-label" for="firstCheckbox">Algoritmicas
+                  y Estructuras de Datos II</label>
+              </li>
+              <li class="list-group-item">
+                <input class="form-check-input me-1" type="checkbox"
+                  name="materias[]" value="37" id="37">
+                <label class="form-check-label" for="firstCheckbox">Ingieneria
+                  de software I</label>
+              </li>
+              <li class="list-group-item">
+                <input class="form-check-input me-1" type="checkbox"
+                  name="materias[]" value="38" id="38">
+                <label class="form-check-label" for="firstCheckbox">Ingieneria
+                  de software II</label>
+              </li>
+              <li class="list-group-item">
+                <input class="form-check-input me-1" type="checkbox"
+                  name="materias[]" value="39" id="39">
+                <label class="form-check-label" for="firstCheckbox">Programacion
+                  Estructurada</label>
+              </li>
+              <li class="list-group-item">
+                <input class="form-check-input me-1" type="checkbox"
+                  name="materias[]" value="40" id="40">
+                <label class="form-check-label" for="firstCheckbox">Programacion
+                  concurrente</label>
+              </li>
+              <li class="list-group-item">
+                <input class="form-check-input me-1" type="checkbox"
+                  name="materias[]" value="41" id="41">
+                <label class="form-check-label" for="firstCheckbox">Desarrollo
+                  de aplicaciones</label>
+              </li>
+              <li class="list-group-item">
+                <input class="form-check-input me-1" type="checkbox"
+                  name="materias[]" value="42" id="42">
+                <label class="form-check-label" for="firstCheckbox">Desarrollo
+                  de aplicaciones web</label>
+              </li>
+              <li class="list-group-item">
+                <input class="form-check-input me-1" type="checkbox"
+                  name="materias[]" value="43" id="43">
+                <label class="form-check-label" for="firstCheckbox">Desarrollo
+                  de aplicaciones moviles </label>
+              </li>
+              <li class="list-group-item">
+                <input class="form-check-input me-1" type="checkbox"
+                  name="materias[]" value="44" id="44">
+                <label class="form-check-label" for="firstCheckbox">Programacion
+                  Orientada a Objetos I</label>
+              </li>
+              <li class="list-group-item">
+                <input class="form-check-input me-1" type="checkbox"
+                  name="materias[]" value="45" id="45">
+                <label class="form-check-label" for="firstCheckbox">Programacion
+                  Orientada a Objetos II</label>
+              </li>
+              <li class="list-group-item">
+                <input class="form-check-input me-1" type="checkbox"
+                  name="materias[]" value="46" id="46">
+                <label class="form-check-label" for="firstCheckbox">Lenguaje de
+                  alto nivel</label>
+              </li>
+              <li class="list-group-item">
+                <input class="form-check-input me-1" type="checkbox"
+                  name="materias[]" value="47" id="47">
+                <label class="form-check-label" for="firstCheckbox">Programacio
+                  con Nuevas Tecnologias</label>
+              </li>
+              <li class="list-group-item">
+                <input class="form-check-input me-1" type="checkbox"
+                  name="materias[]" value="48" id="48">
+                <label class="form-check-label" for="firstCheckbox">Estandares
+                  de Desarrollo de Software</label>
+              </li>
+              <li class="list-group-item">
+                <input class="form-check-input me-1" type="checkbox"
+                  name="materias[]" value="49" id="49">
+                <label class="form-check-label" for="firstCheckbox">Base de
+                  datos I</label>
+              </li>
+              <li class="list-group-item">
+                <input class="form-check-input me-1" type="checkbox"
+                  name="materias[]" value="50" id="50">
+                <label class="form-check-label" for="firstCheckbox">Base de
+                  datos II</label>
+              </li>
+              <li class="list-group-item">
+                <input class="form-check-input me-1" type="checkbox"
+                  name="materias[]" value="51" id="51">
+                <label class="form-check-label" for="firstCheckbox">Analisis y
+                  Diseño de Sistemas I</label>
+              </li>
+              <li class="list-group-item">
+                <input class="form-check-input me-1" type="checkbox"
+                  name="materias[]" value="52" id="52">
+                <label class="form-check-label" for="firstCheckbox">Analisis y
+                  Diseño de Sistemas II</label>
+              </li>
+              <li class="list-group-item">
+                <input class="form-check-input me-1" type="checkbox"
+                  name="materias[]" value="53" id="53">
+                <label class="form-check-label" for="firstCheckbox">Arquitectura
+                  de Procesos</label>
+              </li>
+              <li class="list-group-item">
+                <input class="form-check-input me-1" type="checkbox"
+                  name="materias[]" value="54" id="54">
+                <label class="form-check-label" for="firstCheckbox">Seguridad
+                  Informatica</label>
+              </li>
+              <li class="list-group-item">
+                <input class="form-check-input me-1" type="checkbox"
+                  name="materias[]" value="55" id="55">
+                <label class="form-check-label" for="firstCheckbox">Inteligencia
+                  de Negocios</label>
+              </li>
+              <li class="list-group-item">
+                <input class="form-check-input me-1" type="checkbox"
+                  name="materias[]" value="56" id="56">
+                <label class="form-check-label" for="firstCheckbox">Negocios
+                  Electronicos</label>
+              </li>
+              <li class="list-group-item">
+                <input class="form-check-input me-1" type="checkbox"
+                  name="materias[]" value="57" id="57">
+                <label class="form-check-label" for="firstCheckbox">Sistemas de
+                  Gestion Empresarial</label>
+              </li>
+              <li class="list-group-item">
+                <input class="form-check-input me-1" type="checkbox"
+                  name="materias[]" value="58" id="58">
+                <label class="form-check-label" for="firstCheckbox">Inteligencia
+                  Artificial</label>
+              </li>
+              <li class="list-group-item">
+                <input class="form-check-input me-1" type="checkbox"
+                  name="materias[]" value="59" id="59">
+                <label class="form-check-label" for="firstCheckbox">Administracion
+                  de Proyectos Informaticos</label>
+              </li>
+              <li class="list-group-item">
+                <input class="form-check-input me-1" type="checkbox"
+                  name="materias[]" value="60" id="60">
+                <label class="form-check-label" for="firstCheckbox">Administracion
+                  de la Funcion Informatica</label>
+              </li>
+              <li class="list-group-item">
+                <input class="form-check-input me-1" type="checkbox"
+                  name="materias[]" value="61" id="61">
+                <label class="form-check-label" for="firstCheckbox">Auditoria de
+                  Sistemas Informaticos</label>
+              </li>
+              <li class="list-group-item">
+                <input class="form-check-input me-1" type="checkbox"
+                  name="materias[]" value="62" id="62">
+                <label class="form-check-label" for="firstCheckbox">Copiladores
+                  e interpretes</label>
+              </li>
+              <li class="list-group-item">
+                <input class="form-check-input me-1" type="checkbox"
+                  name="materias[]" value="63" id="63">
+                <label class="form-check-label" for="firstCheckbox">Diseño de
+                  interfaces</label>
               </li>
             </li>
-            <!--Fin lista-->
+          </ul>
+          <!--Fin lista-->
 
 
-            <div class="container">
-              <div class="text-center">
-                <h3>MATERIAS AREA OPTATIVA</h3>
-              </div>
-              <br>
+          <div class="container">
+            <div class="text-center">
+              <h3>MATERIAS AREA METODOLOGICA</h3>
+            </div>
+            <br>
 
 
-              <!--Inicio de lista-->
-              <ul class="list-group">
-                <li class="list-group-item">
-                  <input class="form-check-input me-1" type="checkbox" value=""
-                    id="1">
-                  <label class="form-check-label" for="firstCheckbox">materia</label>
-                </li>
-                <li class="list-group-item">
-                  <input class="form-check-input me-1" type="checkbox" value=""
-                    id="2">
-                  <label class="form-check-label" for="secondCheckbox">materia</label>
-                </li>
-                <li class="list-group-item">
-                  <input class="form-check-input me-1" type="checkbox" value=""
-                    id="3">
-                  <label class="form-check-label" for="thirdCheckbox">materia</label>
-                </li>
-                <li class="list-group-item">
-                  <input class="form-check-input me-1" type="checkbox" value=""
-                    id="4">
-                  <label class="form-check-label" for="firstCheckbox">materia</label>
-                </li>
-                <li class="list-group-item">
-                  <input class="form-check-input me-1" type="checkbox" value=""
-                    id="5">
-                  <label class="form-check-label" for="secondCheckbox">materia</label>
-                </li>
-                <li class="list-group-item">
-                  <input class="form-check-input me-1" type="checkbox" value=""
-                    id="6">
-                  <label class="form-check-label" for="thirdCheckbox">materia</label>
-                </li>
-                <li class="list-group-item">
-                  <input class="form-check-input me-1" type="checkbox" value=""
-                    id="7">
-                  <label class="form-check-label" for="firstCheckbox">materia</label>
-                </li>
-              </ul>
-              <!--Fin lista-->
+            <!--Inicio de lista-->
+            <ul class="list-group">
+              <li class="list-group-item">
+                <input class="form-check-input me-1" type="checkbox"
+                  name="materias[]" value="64" id="64">
+                <label class="form-check-label" for="firstCheckbox">Comunicacion
+                  Oral y Escrita</label>
+              </li>
+              <li class="list-group-item">
+                <input class="form-check-input me-1" type="checkbox"
+                  name="materias[]" value="65" id="65">
+                <label class="form-check-label" for="firstCheckbox">Metodoligia
+                  de la investigacion</label>
+              </li>
+              <li class="list-group-item">
+                <input class="form-check-input me-1" type="checkbox"
+                  name="materias[]" value="66" id="66">
+                <label class="form-check-label" for="firstCheckbox">Emprendedores</label>
+              </li>
+              <li class="list-group-item">
+                <input class="form-check-input me-1" type="checkbox"
+                  name="materias[]" value="67" id="67">
+                <label class="form-check-label" for="firstCheckbox">Seminario de
+                  Investigacion I</label>
+              </li>
+              <li class="list-group-item">
+                <input class="form-check-input me-1" type="checkbox"
+                  name="materias[]" value="68" id="68">
+                <label class="form-check-label" for="firstCheckbox">Seminario de
+                  Investigacion II</label>
+              </li>
+              <li class="list-group-item">
+                <input class="form-check-input me-1" type="checkbox"
+                  name="materias[]" value="69" id="69">
+                <label class="form-check-label" for="firstCheckbox">Proyecto de
+                  investigacion</label>
+              </li>
+            </li>
+          </ul>
+          <!--Fin lista-->
 
 
-              <div class="container">
-                <div class="text-center">
-                  <h3>MATERIAS AREA PROFECIONAL</h3>
-                </div>
-                <br>
+          <div class="container">
+            <div class="text-center">
+              <h3>MATERIAS AREA OPTATIVAS</h3>
+            </div>
+            <br>
+            <!--Inicio de lista-->
+            <ul class="list-group">
+              <li class="list-group-item">
+                <input class="form-check-input me-1" type="checkbox"
+                  name="materias[]" value="70" id="70">
+                <label class="form-check-label" for="firstCheckbox">Deontologia</label>
+              </li>
+              <li class="list-group-item">
+                <input class="form-check-input me-1" type="checkbox"
+                  name="materias[]" value="71" id="71">
+                <label class="form-check-label" for="firstCheckbox">Etica
+                  profesional</label>
+              </li>
+              <li class="list-group-item">
+                <input class="form-check-input me-1" type="checkbox"
+                  name="materias[]" value="72" id="72">
+                <label class="form-check-label" for="firstCheckbox">Electronica</label>
+              </li>
+              <li class="list-group-item">
+                <input class="form-check-input me-1" type="checkbox"
+                  name="materias[]" value="73" id="73">
+                <label class="form-check-label" for="firstCheckbox">Logica</label>
+              </li>
+              <li class="list-group-item">
+                <input class="form-check-input me-1" type="checkbox"
+                  name="materias[]" value="74" id="74">
+                <label class="form-check-label" for="firstCheckbox">Mantenimiento
+                  de laboratorios </label>
+              </li>
+              <li class="list-group-item">
+                <input class="form-check-input me-1" type="checkbox"
+                  name="materias[]" value="75" id="75">
+                <label class="form-check-label" for="firstCheckbox">Liderazgo</label>
+              </li>
+            </li>
+          </ul>
+          <!--Fin lista-->
 
 
-                <!--Inicio de lista-->
-                <ul class="list-group">
-                  <li class="list-group-item">
-                    <input class="form-check-input me-1" type="checkbox"
-                      value="amuelajua" id="1">
-                    <label class="form-check-label" for="firstCheckbox">materia</label>
-                  </li>
-                  <li class="list-group-item">
-                    <input class="form-check-input me-1" type="checkbox"
-                      value="" id="2">
-                    <label class="form-check-label" for="secondCheckbox">materia</label>
-                  </li>
-                  <li class="list-group-item">
-                    <input class="form-check-input me-1" type="checkbox"
-                      value="" id="3">
-                    <label class="form-check-label" for="thirdCheckbox">materia</label>
-                  </li>
-                  <li class="list-group-item">
-                    <input class="form-check-input me-1" type="checkbox"
-                      value="" id="4">
-                    <label class="form-check-label" for="firstCheckbox">materia</label>
-                  </li>
-                  <li class="list-group-item">
-                    <input class="form-check-input me-1" type="checkbox"
-                      value="" id="5">
-                    <label class="form-check-label" for="secondCheckbox">materia</label>
-                  </li>
-                  <li class="list-group-item">
-                    <input class="form-check-input me-1" type="checkbox"
-                      value="" id="6">
-                    <label class="form-check-label" for="thirdCheckbox">materia</label>
-                  </li>
-                  <li class="list-group-item">
-                    <input class="form-check-input me-1" type="checkbox"
-                      value="" id="7">
-                    <label class="form-check-label" for="firstCheckbox">materia</label>
-                  </li>
-                  <li class="list-group-item">
-                    <input class="form-check-input me-1" type="checkbox"
-                      value="" id="8">
-                    <label class="form-check-label" for="secondCheckbox">materia</label>
-                  </li>
-                  <li class="list-group-item">
-                    <input class="form-check-input me-1" type="checkbox"
-                      value="" id="9">
-                    <label class="form-check-label" for="thirdCheckbox">materia</label>
-                  </li>
-                  <li class="list-group-item">
-                    <input class="form-check-input me-1" type="checkbox"
-                      value="" id="9">
-                    <label class="form-check-label" for="thirdCheckbox">materia</label>
-                  </li>
-                </ul>
-                <!--Fin lista-->
 
 
-                <div class="mb-3">
-                  <button type="button" class="btn btn-danger form-control"
-                    onclick="seleccionar_materias()"> Guardar "</button>
-                </div>
-              </div>
-              <!--Fin lista-->
-              <script src="js/Asignatura.js"></script>
-              <script src="js/carrera.js"></script>
-              <script src="js/Persona.js"></script>
-              <script src="js/Alumno.js"></script>
-              <script src="js/eleccionmaterias.js"></script>
-              <script src="js/contador_materias.js"></script>
 
-            </body>
-          </html>
+
+
+
+
+
+
+          <div class="mb-3">
+            <button type="button" class="btn btn-danger form-control"
+              onclick="seleccionar_materias()"> Guardar "</button>
+          </div>
+        </div>
+        <!--Fin lista-->
+        <script src="js/Asignatura.js"></script>
+        <script src="js/carrera.js"></script>
+        <script src="js/Persona.js"></script>
+        <script src="js/Alumno.js"></script>
+        <script src="js/eleccionmaterias.js"></script>
+        <script src="js/contador_materias.js"></script>
+
+      </body>
+    </html>

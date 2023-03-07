@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,21 +11,13 @@
     <link rel="stylesheet" href="asets/css/bootstrap.min.css">
     <link rel="stylesheet" href="asets/css/estilos.css">
 
-    <script src="js/Grupo.js"></script>
-    <script src="js/Asignatura.js"></script>
-    <script src="js/carrera.js"></script>
-    <script src="js/Persona.js"></script>
-    <script src="js/Alumno.js"></script>
-    <script src="js/main.js"></script>
-
-  </head>
-  <body>
+</head>
+<body>
     <!--Inicio barra superior-->
     <nav class="navbar bg-danger" data-bs-theme="dark">
       <div class="container-fluid">
         <a class="navbar-brand" href="pantalla1.html">
-          <img src="asets/img/UDV.png" alt="Logo" width="60" height="50"
-            class="d-inline-block align-text-center">
+          <img src="asets/img/UDV.png" alt="Logo" width="60" height="50" class="d-inline-block align-text-center">
           <text id="textoc">UNIVERSIDAD DEL VALLE</text>
         </a>
       </div>
@@ -34,80 +26,72 @@
 
     <!--Inicio de formulario-->
     <div class="container">
-      <div class="text-center">
-        <img src="asets/img/UDV.png" class="mt-5" width="200px" alt="">
-        <h3>INSCRIPCION</h3>
+        <div class="text-center">
+            <img src="asets/img/UDV.png" class="mt-5" width="200px" alt="">
+            <h3>INSCRIPCION</h3>
 
-        <form>
-          <br>
-          <div class="mb-3">
-            <label for="nombre" class="form-label">Nombre</label>
-            <input type="varchar" class="form-control" id="nombre"
-              placeholder="Ingresa tu nombre">
-          </div>
-          <div class="mb-3">
-            <label for="ap-paterno" class="form-label">Ap-Paterno</label>
-            <input type="varchar" class="form-control" id="ap_paterno"
-              placeholder="Ingresa tu apellido paterno">
-          </div>
-          <div class="mb-3">
-            <label for="ap-materno" class="form-label">Ap-Materno</label>
-            <input type="varchar" class="form-control" id="ap_materno"
-              placeholder="Ingresa tu apellido materno">
-          </div>
-          <div class="mb-3">
-            <label for="nss" class="form-label">NSS</label>
-            <input type="int" class="form-control" minlength="11" maxlength="11"
-              id="nss" placeholder="Ingresa tu NSS">
-          </div>
-          <div class="mb-3">
-            <label for="fecha" class="form-label">Fecha de nacimiento</label>
-            <input type="date" class="form-control" id="fecha">
-          </div>
-          <div class="mb-3">
-            <label for="promedio" class="form-label">Promedio bachillerato</label>
-            <input type="number" class="form-control" id="promedio">
-          </div>
-          <div class="mb-3">
-            <label for="correo" class="form-label">Correo</label>
-            <input type="mail" class="form-control" id="correo"
-              placeholder="Ingresa tu correo">
-          </div>
-          <div class="mb-3">
-            <label for="contraseña" class="form-label">Contraseña</label>
-            <input type="password" class="form-control" id="contraseña"
-              placeholder="********">
-          </div>
-          <br>
-          <div class="mb-3">
-            <label for="matricula-gen" class="form-label">Su Matricula Asignada
-              es: </label>
-            <div id="matricula-gen"></div>
-          </div>
-          <br>
-          <div class="mb-3">
-            <select name="Primer_Cuatrimestre" id="Primer_Cuatrimestre">
-              <option value="1">Primer Cuatrimestre</option>
-            </select>
-            
-          </div>
-          <br>
-          <div class="mb-3">
-            <input type="button" class="btn btn-danger form-control"
-              onclick="guardarDatosInscripcion()" value=" registrar">
-          </div>
-          <div class="mb-3">
-            <a href="eleccionmaterias.html" class="btn btn-secondary
-              form-control">Eleccion de materias</a>
-          </div>
-          <div class="mb-3">
-            <a href="pantalla1.html" class="btn btn-secondary form-control">Menu</a>
-          </div>
-        </form>
-
-      </div>
+            <form>
+                <br>
+                <div class="mb-3">
+                    <label for="nombre" class="form-label">Nombre</label>
+                    <input type="varchar" class="form-control" id="nombre" placeholder="Ingresa tu nombre">
+                  </div>
+                  <div class="mb-3">
+                    <label for="ap_paterno" class="form-label">Ap-Paterno</label>
+                    <input type="varchar" class="form-control" id="ap_paterno" placeholder="Ingresa tu apellido paterno">
+                  </div>
+                  <div class="mb-3">
+                    <label for="ap_materno" class="form-label">Ap-Materno</label>
+                    <input type="varchar" class="form-control" id="ap_materno" placeholder="Ingresa tu apellido materno">
+                  </div>
+                  <div class="mb-3">
+                    <label for="nss" class="form-label">NSS</label>
+                    <input type="int" class="form-control" minlength="11" maxlength="11" id="nss" placeholder="Ingresa tu NSS">
+                  </div>
+                  <div class="mb-3">
+                    <label for="fecha" class="form-label">Fecha de nacimiento</label>
+                    <input type="date" class="form-control" id="fecha" >
+                  </div>
+                  <div class="mb-3">
+                    <label for="promedio" class="form-label">Promedio bachillerato</label>
+                    <input type="number" class="form-control" id="promedio" >
+                  </div>
+                  <div class="mb-3">
+                    <label for="correo" class="form-label">Correo</label>
+                    <input type="mail" class="form-control" id="correo" placeholder="Ingresa tu correo">
+                  </div>
+                  <div class="mb-3">
+                    <label for="contraseña" class="form-label">Contraseña</label>
+                    <input type="password" class="form-control" id="contraseña" placeholder="********">
+                  </div >
+                  <br>
+                  <div class="mb-3">
+                    <label for="matricula-gen" class="form-label">Su Matricula Asignada es: </label> 
+                    <div id="matricula-gen"></div> 
+                  </div>
+                  <br>
+                  <div class="mb-3">
+                    <input type="button" class="btn btn-danger form-control" onclick="guardarDatosInscripcion()" value="registrar">
+                  </div>
+                  <div class="mb-3">
+                    <a href="eleccionmaterias.html" class="btn btn-secondary form-control">Eleccion de materias</a>
+                  </div>
+                  <div class="mb-3">
+                    <a href="pantalla1.html" class="btn btn-secondary form-control">Menu</a>
+                  </div>
+            </form>
+          
+        </div>
     </div>
     <!--Fin formulario-->
+<script src="js/Grupo.js"></script>
+<script src="js/Asignatura.js"></script>
+<script src="js/carrera.js"></script>
+<script src="js/Persona.js"></script>
+<script src="js/Alumno.js"></script>
+<script src="js/main.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/sweetalert2.all.min.js"></script>
 
-  </body>
+</body>
 </html>
