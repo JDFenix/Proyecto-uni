@@ -23,7 +23,3 @@ class Persona {
 
 
 
-
-
-
-
