@@ -72,7 +72,7 @@ function guardar_alumnos() {
     alumnos.push(alum07);
     localStorage.setItem("Datos-Alumnos", JSON.stringify(alumnos));
     alert('Datos guardados correctamente');
-     window.location.href = "areabasica.html"
+    window.location.href = "areabasica.html"
   } else {
     alert("ALUMNO YA REGISTRADO!");
   }

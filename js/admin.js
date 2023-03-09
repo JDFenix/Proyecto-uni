@@ -18,8 +18,8 @@ function login_admin() {
     let contraseñaig = document.getElementById("contraseña").value;
 
     if (admin1.correo_admin === correoing && admin1.contraseña === contraseñaig ) {
-     alert("heloo")
-        window.location.href = "verifadmin.hmtl";
+     alert("Datos Correctos");
+        window.location.href = "verifadmin.html";
     }else{
         alert("Contraseña o correo equivocado");
     }
