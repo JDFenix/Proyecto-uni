@@ -1,11 +1,11 @@
 function obtenerCheckboxSeleccionados() {
-    // Obtener todos los checkbox con nombre "materias[]"
-    const checkboxes = document.querySelectorAll('input[name="materias[]"]:checked');
-    
-    // Obtener los nombres de los checkbox seleccionados
-    const nombresCheckbox = Array.from(checkboxes).map(checkbox => checkbox.nextElementSibling.textContent.trim());
-    console.log(nombresCheckbox);
-    // Retornar un array con los nombres de los checkbox seleccionados
-    return nombresCheckbox;
+  const checkboxes = document.querySelectorAll('input[name="materias[]"]:checked');
+  const nombresCheckbox = Array.from(checkboxes, checkbox => checkbox.nextElementSibling.innerText.trim());
+  console.log(nombresCheckbox);
+  let datillos = localStorage.setItem("Datos-Alumnos", JSON.stringify(nombresCheckbox));
+  console.log(JSON.parse(localStorage.getItem("Datos-Alumnos")));
 
-  }
+  return nombresCheckbox;
+  
+}
+

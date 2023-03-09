@@ -9,11 +9,21 @@ function login() {
 
 //se busca en localstorage si algun objeto  coincide con el escrito
 
+function contador_cuatrimestre (){
+  let cuatri = document.getElementById("cuatrimestre");
+  let cuatri_selecc = cuatri.value;
+  console.log(cuatri_selecc);
+}
+
     let usuarioExistente = alumnosss.find(({ correo,contraseña }) => correo=== email.value && contraseña===password.value);
     if (usuarioExistente === undefined) {
       alert("Correo o Contraseña incorrectos")
     } else {
-        window.location.href = 'areabasica.html';
+      
+         window.location.href = 'areabasica.html';
+        contador_cuatrimestre();
     }
 
   }
+
+  
