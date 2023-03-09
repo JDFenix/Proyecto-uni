@@ -19,7 +19,7 @@ function contadorfinal() {
     if (number_basic + number_metodologicas + number_optativa + number_profesional < 8 && number_basic + number_metodologicas + number_optativa + number_profesional > 0) {
         obtenerCheckboxSeleccionados();
         alert("sus materias han sido guardadas");
-        // window.location.href = "pantalla1.html"
+         window.location.href = "pantalla1.html"
     } else {
         alert("ha escogido mas de 7 materias o ninguna ");
          number_basic = 0;
