@@ -1,8 +1,8 @@
 class Asignatura {
     nombre;
-
-    constructor(nombre, materias, carrera, grupo) {
+calificion
+    constructor(nombre, calificion ) {
 
         this.nombre = nombre;
-    }
+        this.calificion=calificion;    }
 }

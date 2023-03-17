@@ -1,5 +1,4 @@
 
-
 var alumnos = [];
 
 let matricula;
@@ -26,13 +25,13 @@ function guardarDatosInscripcion() {
   let contraseña = document.querySelector("#contraseña").value;
 
   if (nombre.trim() === '' ||
-      apellido_pat.trim() === '' ||
-      apellido_mat.trim() === '' ||
-      nss.trim() === '' ||
-      fecha.trim() === '' ||
-      promedio_bachillerato.trim() === '' ||
-      correo.trim() === '' ||
-      contraseña.trim() === '') {
+    apellido_pat.trim() === '' ||
+    apellido_mat.trim() === '' ||
+    nss.trim() === '' ||
+    fecha.trim() === '' ||
+    promedio_bachillerato.trim() === '' ||
+    correo.trim() === '' ||
+    contraseña.trim() === '') {
 
     Swal.fire({
       icon: 'error',
@@ -48,7 +47,7 @@ function guardarDatosInscripcion() {
   let alum07 = new Alumno(nombre, apellido_pat, apellido_mat, nss, fecha, promedio_bachillerato, correo, contraseña, matricula);
 
   let dats_alms = JSON.parse(localStorage.getItem("Datos-Alumnos")) || [];
-  let exists = dats_alms.some(({ correo: c, nss: ns  }) => c === correo && ns === nss);
+  let exists = dats_alms.some(({ correo: c, nss: ns }) => c === correo && ns === nss);
 
   if (exists) {
     alert("ALUMNO YA REGISTRADO!");
@@ -56,6 +55,9 @@ function guardarDatosInscripcion() {
     alumnos.push(alum07);
     dats_alms.push(alum07);
     localStorage.setItem("Datos-Alumnos", JSON.stringify(dats_alms));
-    alert('Datos guardados correctamente');
+    alert('DATOS GUARDADOS CORRECTAMENTE! espere sera redireccionado al inicio en 15 segundos  ');
+    setTimeout(function () {
+      window.location.href = "pantalla1.html"
+    }, 15000);
   }
 }

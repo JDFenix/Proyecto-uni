@@ -10,7 +10,7 @@ class Alumno extends Persona {
 
 
     //Se crea una clase alumno con los anteriores datos
-    constructor(nombre, apellido_pat, apellido_mat, nss, fecha, promedio_bachillerato, correo, contraseña, matricula, cuatrimestre, materia) {
+    constructor(nombre, apellido_pat, apellido_mat, nss, fecha, promedio_bachillerato, correo, contraseña, matricula, materia, cuatrimestre) {
         super(nombre, apellido_pat, apellido_mat, fecha)
 
         this.matricula = matricula;

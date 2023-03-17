@@ -1,3 +1,0 @@
-class carrera {
-    nombre
-}

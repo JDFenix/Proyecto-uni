@@ -19,7 +19,7 @@ function contador_cuatrimestre (){
     if (usuarioExistente === undefined) {
       alert("Correo o Contraseña incorrectos")
     } else {
-      
+      alert("Bienvenido" )
          window.location.href = 'areabasica.html';
         contador_cuatrimestre();
     }

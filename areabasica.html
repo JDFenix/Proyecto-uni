@@ -29,12 +29,32 @@
     </nav>
     <!--Fin de barra superior-->
 
+    <div>
+      <label for="text" class="form-label">Ingrese su cuatrimestre</label>
+      <select id="cuatrimestre">Semestre
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+      </select>
+      <button onclick="cuatrimestre()">save</button>
+    </div>
+    <br>
 
     <div class="container">
       <div class="text-center">
         <img src="asets/img/UDV.png" class="mt-5" width="200px" alt="">
         <h3>MATERIAS AREA BASICA</h3>
       </div>
+      <br>
+     
+      <label  for="matricula">Ingrese su Matricula Previamente Asignada</label>
+      <input type="text" name="Matr" id="Matr" placeholder="Matricula">
       <br>
 
       <div id="materiasselecc">
@@ -423,56 +443,56 @@
               <label class="form-check-label" for="firstCheckbox">Diseño de
                 interfaces</label>
             </li>
-          </li>
-        </ul>
-        <!--Fin lista-->
-
-
-        <div class="container">
-          <div class="text-center">
-            <h3>MATERIAS AREA METODOLOGICA</h3>
           </div>
-          <br>
+        </li>
+      </ul>
+      <!--Fin lista-->
 
 
-          <!--Inicio de lista-->
-          <div id="metodologicas">
-            <ul class="list-group">
-              <li class="list-group-item">
-                <input class="form-check-input me-1" type="checkbox"
-                  name="materias[]" value="64" id="64">
-                <label class="form-check-label" for="firstCheckbox">Comunicacion
-                  Oral y Escrita</label>
-              </li>
-              <li class="list-group-item">
-                <input class="form-check-input me-1" type="checkbox"
-                  name="materias[]" value="65" id="65">
-                <label class="form-check-label" for="firstCheckbox">Metodoligia
-                  de la investigacion</label>
-              </li>
-              <li class="list-group-item">
-                <input class="form-check-input me-1" type="checkbox"
-                  name="materias[]" value="66" id="66">
-                <label class="form-check-label" for="firstCheckbox">Emprendedores</label>
-              </li>
-              <li class="list-group-item">
-                <input class="form-check-input me-1" type="checkbox"
-                  name="materias[]" value="67" id="67">
-                <label class="form-check-label" for="firstCheckbox">Seminario de
-                  Investigacion I</label>
-              </li>
-              <li class="list-group-item">
-                <input class="form-check-input me-1" type="checkbox"
-                  name="materias[]" value="68" id="68">
-                <label class="form-check-label" for="firstCheckbox">Seminario de
-                  Investigacion II</label>
-              </li>
-              <li class="list-group-item">
-                <input class="form-check-input me-1" type="checkbox"
-                  name="materias[]" value="69" id="69">
-                <label class="form-check-label" for="firstCheckbox">Proyecto de
-                  investigacion</label>
-              </li>
+      <div class="container">
+        <div class="text-center">
+          <h3>MATERIAS AREA METODOLOGICA</h3>
+        </div>
+        <br>
+
+
+        <!--Inicio de lista-->
+        <div id="metodologicas">
+          <ul class="list-group">
+            <li class="list-group-item">
+              <input class="form-check-input me-1" type="checkbox"
+                name="materias[]" value="64" id="64">
+              <label class="form-check-label" for="firstCheckbox">Comunicacion
+                Oral y Escrita</label>
+            </li>
+            <li class="list-group-item">
+              <input class="form-check-input me-1" type="checkbox"
+                name="materias[]" value="65" id="65">
+              <label class="form-check-label" for="firstCheckbox">Metodoligia
+                de la investigacion</label>
+            </li>
+            <li class="list-group-item">
+              <input class="form-check-input me-1" type="checkbox"
+                name="materias[]" value="66" id="66">
+              <label class="form-check-label" for="firstCheckbox">Emprendedores</label>
+            </li>
+            <li class="list-group-item">
+              <input class="form-check-input me-1" type="checkbox"
+                name="materias[]" value="67" id="67">
+              <label class="form-check-label" for="firstCheckbox">Seminario de
+                Investigacion I</label>
+            </li>
+            <li class="list-group-item">
+              <input class="form-check-input me-1" type="checkbox"
+                name="materias[]" value="68" id="68">
+              <label class="form-check-label" for="firstCheckbox">Seminario de
+                Investigacion II</label>
+            </li>
+            <li class="list-group-item">
+              <input class="form-check-input me-1" type="checkbox"
+                name="materias[]" value="69" id="69">
+              <label class="form-check-label" for="firstCheckbox">Proyecto de
+                investigacion</label>
             </li>
           </ul>
         </div>
@@ -524,31 +544,27 @@
         </div>
       </div>
       <!--Fin lista-->
-
-
-
-
-
-
-
-
-
-
-
+      <br>
       <div class="mb-3">
-        <button type="button" class="btn btn-danger form-control"
-          onclick=" contadorfinal()"> Guardar Materias
-          </button>
+        <label class="form-check-label" for="Materiasdiv">Sus materias
+          seleccionadas son:</label>
+        <div id="Ingresarmatricula"></div>
+      </div>
+      <br>
+      <div class="mb-3">
+        <button  class="btn btn-danger form-control"
+          onclick=" obtenerCheckboxSeleccionados()"> Guardar Materias
+        </button>
       </div>
     </div>
     <!--Fin lista-->
     <script src="js/Asignatura.js"></script>
-    <script src="js/carrera.js"></script>
-    <script src="js/Persona.js"></script>
+    <script  src="js/Persona.js"></script>
     <script src="js/Alumno.js"></script>
-    <script src="js/eleccionmaterias.js"></script>
-    <script src="js/contador_materias.js"></script>
+    <script  src="js/contador_materias.js"></script>
+    <script src="js/main.js"></script>
     <script src="js/obtenerasig.js"></script>
+   
 
   </body>
 </html>
