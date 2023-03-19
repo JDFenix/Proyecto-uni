@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>UNIVERSIDAD DEL VALLE</title>
+        <!--icono-->
+        <link rel="shortcut icon" href="asets/img/UDV.png" type="image/x-icon">
+        <!--bootstrap-->
+        <link rel="stylesheet" href="asets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="asets/css/estilos.css">
+
+
+
+
+
+    </head>
+    <body>
+        <nav class="navbar bg-danger" data-bs-theme="dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="pantalla1.html">
+                <img src="asets/img/UDV.png" alt="Logo" width="60" height="50"
+                  class="d-inline-block align-text-center">
+                <text id="textoc">UNIVERSIDAD DEL VALLE</text>
+              </a>
+            </div>
+          </nav>
+          <!--Fin de barra superior-->
+      
+          <!--Inicio de formulario-->
+          <div class="container">
+            <div class="text-center">
+              <img src="asets/img/UDV.png" class="mt-5" width="200px" alt="">
+
+              <h3>Registro De administrativo</h3>
+              <label >Llena todos los campos </label><br><br>
+              <form>
+                <br>
+                <div class="mb-3">
+                    <label for="correo" class="form-label">Correo</label>
+                    <input type="mail" class="form-control" id="correoad"
+                      placeholder="Ingresa tu correo">
+                  </div>
+                  <div class="mb-3">
+                    <label for="contraseña" class="form-label">Contraseña</label>
+                    <input type="password" class="form-control" id="contraseñaad"
+                      placeholder="********">
+                  </div>
+                  <br>
+                  <div class="mb-3">
+                    <input type="button" class="btn btn-danger form-control"
+                      onclick="crearAdmon()" value="Guardar Datos">
+                  </div>
+                  <div class="mb-3">
+                    <a href="pantalla1.html" id="inicioadmon" class="btn btn-danger form-control">Inicio</a>
+                  </div>
+
+
+
+        <script src="js/Asignatura.js"></script>
+        
+        <script src="js/Persona.js"></script>
+        <script src="js/admin.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/sweetalert2.all.min.js"></script>
+        <script src="js/alerta.js"></script>
+    </body>
+</html>

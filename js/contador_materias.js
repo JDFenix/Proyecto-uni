@@ -1,4 +1,4 @@
-export {obtenerCheckboxSeleccionados, nombresCheckbox};
+
 let number_metodologicas = 0;
 let number_profesional = 0;
 let number_optativa = 0;
@@ -47,13 +47,13 @@ function seleccionar_materias_profesional() {
 }
 
 
-let namesasignature ;
-export{obtenerCheckboxSeleccionados, nombresCheckbox}
+let namesasignature;
+
 function obtenerCheckboxSeleccionados() {
     alumnosss = [];
     const checkboxes = document.querySelectorAll('input[name="materias[]"]:checked');
     const nombresCheckbox = Array.from(checkboxes, checkbox => checkbox.nextElementSibling.innerText.trim());
-namesasignature = nombresCheckbox;
+    namesasignature = nombresCheckbox;
 
     // Asignar las materias seleccionadas al alumno correspondiente
     let matriculaing = document.getElementById("Matr");
@@ -67,7 +67,7 @@ namesasignature = nombresCheckbox;
     } else {
         contadorfinal();
         console.log(nombresCheckbox);
-       
+
     }
 }
 
@@ -78,23 +78,23 @@ function contadorfinal() {
     seleccionar_materias_optativa();
 
 
-if (number_basic <= 2){
-    if (number_basic + number_metodologicas + number_optativa + number_profesional >= 3 && number_basic + number_metodologicas + number_optativa + number_profesional <= 7) {
-     
-        alert("Sus materias han sido guardadas sera redireccionado al inicio");
-       
-         let divmat = document.getElementById("Ingresarmatricula");
-         divmat.innerHTML = namesasignature.join(", ");
-         setTimeout(function(){
-             window.location.href="pantalla1.html"
-         }, 8000);
-         } else {
-             alert("Debe seleccionar entre 3 y 7 materias la pagina sera recargada");
-      setInterval("location.reload()",1000);
+    if (number_basic <= 2) {
+        if (number_basic + number_metodologicas + number_optativa + number_profesional >= 3 && number_basic + number_metodologicas + number_optativa + number_profesional <= 7) {
+
+            alert("Sus materias han sido guardadas sera redireccionado al inicio");
+
+            let divmat = document.getElementById("Ingresarmatricula");
+            divmat.innerHTML = namesasignature.join(", ");
+            setTimeout(function () {
+                window.location.href = "pantalla1.html"
+            }, 8000);
+        } else {
+            alert("Debe seleccionar entre 3 y 7 materias la pagina sera recargada");
+            setInterval("location.reload()", 1000);
+        }
+    } else {
+        alert("ha escogido mas de 2 materias en area basica ")
     }
-}else{
-    alert("ha escogido mas de 2 materias en area basica ")
-}
 }
 
 
